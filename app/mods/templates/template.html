@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{sysDescricao}}">
+		<meta name="author" content="">
+		<link rel="shortcut icon" type="image/png" href="{{path}}/{{favicon}}"/>
+
+		<title>{{title}}</title>
+		
+	
+	</head>
+	<body>
+		<ul>
+		{%for m in menu%}
+			{%if m.nome == mAtual%}
+				<li><b>{{m.nome}}</b></li>
+			{%else%}
+				<li>{{m.nome}}</li>
+			{%endif%}
+		{% endfor %}
+		</ul>
+	</body>
+</html>
